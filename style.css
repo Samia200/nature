@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Forum&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::selection {
+    color: black;
+    background: #ffd936;
+  }
+.home{
+max-width: 100%;
+height: 94vh;
+background-image: url(header-hero.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+.bg{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 94%;
+    background-color: rgba(0, 0, 0, 0.295);
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+ img{
+   position: relative;
+    width:60px ;
+    margin: 20px 12%;
+    z-index: 10;
+}
+nav ul{
+    position: absolute;
+    right: 6rem;
+    top: 35px;
+    
+}
+nav ul li{
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffffee;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    padding: 0 1rem;
+    cursor: pointer;
+
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    border: 1px white solid;
+    padding: 12px 22px ;
+    border-radius: 4px;
+}
+#open{
+    position: absolute;
+    display: none !important;
+    right: 3rem;
+    top: 20px;
+    font-size: 20px;
+    color: #f6f8f5;
+    background-color: #ffd936;
+    border-radius: 50%;
+    padding: 10px 12px;
+    cursor: pointer;
+
+}
+ #close{
+    display: none ;
+}
+@media screen and (max-width:870px) {
+    img{
+         width:40px ;
+     
+     }
+    nav ul li{
+        display: block;
+        padding: 20px 3rem 0 1rem;
+        color: #000;
+    }
+    nav ul li:hover{
+        color: #ffd936;
+    }
+    nav ul li a{
+       display: none;
+    }
+    #menu{
+        z-index: 5;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 10% ;
+        height: 94%;
+        display: none;
+        background-color: #f6f8f5;
+    }
+     #close{
+        z-index: 10;
+        position: absolute;
+        display: none ;
+        right: 3rem;
+        top: 20px;
+        font-weight: 400;
+        border: none;
+        background: transparent;
+        font-size: 22px;
+        color: #000;
+        padding: 10px 5px;
+        cursor: pointer;
+    }
+      #open{
+        display: block !important ;
+    }
+}
+/*--------- nav end-----------*/
+.main{
+    position: relative;
+    top: 20%;
+    text-align: center;
+}
+.main h1{
+    color: white;
+    font-size: 50px;
+    font-family: 'DM Sans', sans-serif;
+
+}
+.main h1 span{
+    font-size: 117px;
+    display: block;
+    margin-top: -40px;
+}
+.main p{
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+.main a{
+    text-decoration: none;
+    color: #536942;
+    font-size: 14px;
+    font-family: 'DM Sans', sans-serif;
+    background-color: #ffd936;
+    padding: 17px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+/******** home section end *********/
+.services{
+    margin: 6rem 3%;
+    text-align: center;
+}
+.titel h2{
+    font-family: 'DM Sans', sans-serif;
+    color: #536942;
+    font-size: 38px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+.titel span{
+    position:absolute;
+    width: 7%;
+    margin-left: -40px;
+    border-bottom: #ffd936 3px solid;
+}
+.columns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5rem 4%;
+}
+
+.col {
+    text-align: left;
+    width: 30%;
+}
+.col img{
+    width: 100%;
+    margin: 0;
+    border-radius: 2px;
+}
+.col h3{
+    font-family: 'DM Sans', sans-serif;
+    color: #536942;
+    margin: 1rem 0;
+}
+.col p{
+    font-family: 'DM Sans', sans-serif;
+    color: #536942;
+    width: 90%;
+    text-align: justify;
+}
+
+@media screen and (max-width:870px) {
+    .columns{
+        flex-direction: column;
+        margin: 5rem 1%;
+    }
+    
+    .col {
+        width: 100%;
+        margin-bottom: 3rem;
+
+    }
+   
+}
+/*********  services section end  **********/
+.minetor{
+    width: 100%;
+    height: 100%;
+    background: #f6f8f5;
+    padding: 3rem 0;
+    margin: 4rem 0;
+    text-align: center;
+}
+.minetor img{
+    opacity: 0.4;
+    width: 40px;
+    margin: 2rem 0;
+}
+.minetor h4{
+    font-family: 'Forum', cursive;
+font-size: 35px;
+text-align:center ;
+color: #536942;
+padding: 0 30%;
+margin-bottom: 2rem;
+}
+.avatar img{
+ opacity: 1;
+ width: 40px;
+ margin: 10px;
+}
+.avatar p{
+    color: rgb(82 104 64 / 50%);
+    font-size: 14px;
+    font-family: 'DM Sans', sans-serif;
+ 
+}
+@media screen and (max-width:870px) {
+    .minetor h4{
+        padding: 0 20%;
+        font-size: 23px;
+    }
+    
+    .minetor img {
+        width: 30px;
+
+    }
+   
+}
+/********** minetor section end ************/
+.about-us{
+    margin: 3rem 3%;
+    display: flex;
+    flex-direction: row;
+}
+.left-side{
+    margin: 5rem 0 5rem 10%;
+}
+.left-side .p1{
+    opacity: 0.7;
+    font-family: 'DM Sans', sans-serif;
+    color: #536942;
+    text-align: justify;
+    font-size: 12px;
+
+}
+.left-side h4{
+    color: #536942;
+    font-size: 40px;
+    font-family: 'Forum',display;
+    margin-top: 1rem ;
+    margin-bottom: 2rem;
+    width: 90%;
+
+}
+.p2{
+    opacity: 0.7;
+    font-family: 'DM Sans', sans-serif;
+    color: #536942;
+    margin-bottom: 3rem;
+    font-size: 16px;
+    width: 80%;
+    text-align: justify;
+}
+.left-side a {
+    text-decoration: none;
+    color: #536942;
+    font-size: 14px;
+    font-family: 'DM Sans', sans-serif;
+    border: #536942 1px solid;
+    padding: 14px 35px;
+    border-radius: 2px;
+}
+.right-side img{
+   width: 400px;
+}
+@media screen and (min-width:870px) and (max-width:1190px){
+    .left-side h4{
+        font-size: 33px;
+        width: 100%;
+    }
+    .about-us{
+        margin: 3rem 15px;
+    
+    }
+    .left-side{
+        margin: 5rem 0 5rem 10px;
+    }
+    .p2{
+      font-size: 12px;
+    }
+    .right-side{
+        width: 340px;
+    }
+    .right-side img{
+        width: 340px;
+        margin: 0;
+     }
+}
+@media screen and (max-width:870px) {
+    .right-side{
+       display: none;
+    }
+    
+    .left-side h4{
+        font-size: 33px;
+       
+    }
+   
+}
+/**************** about us section end**********************/
+.questions{
+    width: 100%;
+    height: 100%;
+    background-image: url(footer-hero-big.jpg);
+    padding: 7% 0;
+    margin: 3rem 0;
+    text-align: center;
+}
+.questions h1{
+    font-size: 54px;
+    margin: 2rem 0;
+    color: #536942;
+    font-family: 'DM Sans', sans-serif;
+
+}
+.questions p{
+    font-size: 17px;
+    font-family: 'DM Sans', sans-serif;
+    color: rgb(82 104 64 / 50%);
+    padding:0 30% ;
+    margin-bottom: 3rem;
+}
+.questions a{
+    text-decoration: none;
+    color: rgb(82 104 64 / 70%);
+    font-size: 14px;
+    font-family: 'DM Sans', sans-serif;
+    background-color: #ffd936;
+    padding: 14px 35px;
+    border-radius: 4px;
+    margin-bottom: 3rem;
+}
+@media screen and (max-width:870px) {
+    .questions{
+      
+        background-image: none;
+        padding: 10px 0;
+    }
+    .questions h1{
+        font-size: 40px;
+     
+    
+    }
+    .questions p{
+       padding:0 10% ;
+    }
+}
+/*********** questions section end***********/
+footer{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content:space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+footer ul li{
+    display: inline-block;
+    text-decoration: none;
+    color: #536942;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    padding: 0 1rem;
+    
+}
+.copyright p{
+    color: #536942;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+}
+@media screen and (max-width:870px) {
+    footer{
+        flex-direction: column;
+       
+    }
+    footer ul li{
+        padding: 10px 1rem;
+        
+    }
+    .copyright p{
+       padding: 10px 0;
+    }
+}
